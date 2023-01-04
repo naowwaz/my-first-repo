@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* border: 2px solid green; */
+            margin: 0 auto;
+            max-width: 800px;
+            background: black;
+            color: white;
+        }
+        /* 1.vieport meta tag */
+        h1{
+            font-size: 10vw;
+        }
+        .enfeild img{
+            width: 100%;
+        }
+        
+        /* 5.Responsive Split screen using Flex (2 column) */
+        .container-two{
+            display: flex;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .bike img{
+            width: 100%;
+        }
+        
+        .container-two .split{
+            width: 50%;
+        }
+        .split img{
+            width: 100%;
+        }
+        .bike{
+            border: 2px solid indianred;
+        }
+        @media screen and (max-width:576px) {
+            .container-two{
+                flex-direction: column-reverse;
+            }
+            .container-two .split{
+                width: 100%;
+            }
+            .container{
+               grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media screen and (min-width:577px) and (max-width:700px) {
+            .container{
+               grid-template-columns: repeat(2, 1fr);
+            }
+            
+        }
+        </style>
+</head>
+<!-- 
+    1.vieport meta tag
+    2. CSS Relative unit
+    3. Responsive Image (Fluid)
+    4.body max-width and margin auto
+    5.Responsive Split screen using Flex (2 column)
+    6.Responsive multi colom
+    7.bootstrap
+ -->
+
+<body>
+    <section>
+        <h1>My Responsive Website</h1>
+    </section>
+    <section class="enfeild">
+        <h3 >Enfied</h3>
+        <img src="2022-royal-enfield-classic-350-first-look-retro-motorcycle-india-7.jpg" alt="">
+    </section>
+    <section>
+        <h2>Two parts</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="enfield-5.jpg" alt="">
+            </div>
+            <div class="split">
+                <img src="2022-royal-enfield-classic-350-first-look-retro-motorcycle-india-7.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+         <div class="container">
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-1</h2>
+                <h4>price: 1M</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quo assumenda placeat nobis mollitia dolore, iure sit consectetur delectus, consequuntur quam! Officiis impedit nam labore eos praesentium omnis, ad cumque!</p>
+                <button>order  now</button>
+            </div>
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-2</h2>
+                <h4>price: 1M</h4>
+                <p>Fugiat perspiciatis quisquam doloribus similique nesciunt, delectus rem. Ipsum, perspiciatis necessitatibus pariatur iure velit ut modi corrupti sunt voluptate? Accusamus nulla provident labore? Consequuntur necessitatibus tempora id incidunt beatae placeat?</p>
+                <button>order  now</button>
+            </div>
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-3</h2>
+                <h4>price: 1M</h4>
+                <p>Ad odio similique accusantium dolores neque architecto totam voluptate libero commodi, qui molestias quos esse, autem voluptatibus enim possimus! Quam officia reiciendis magnam quia expedita, cupiditate asperiores explicabo aliquam quisquam?</p>
+                <button>order  now</button>
+            </div>
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-4</h2>
+                <h4>price: 1M</h4>
+                <p>Eaque nobis iure aspernatur similique unde obcaecati consectetur praesentium, illo dolorem fugit reprehenderit iusto deleniti. Expedita nostrum deleniti quidem est dolor saepe natus, quas rem doloribus facilis quis, vitae voluptas.</p>
+                <button>order  now</button>
+            </div>
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-5</h2>
+                <h4>price: 1M</h4>
+                <p>Quisquam animi quaerat assumenda asperiores ipsam excepturi id aspernatur minus dolore vitae reprehenderit repellat dicta minima praesentium nemo exercitationem amet quo ducimus distinctio pariatur reiciendis harum temporibus, impedit sed! Nostrum!</p>
+                <button>order  now</button>
+            </div>
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-6</h2>
+                <h4>price: 1M</h4>
+                <p>Magnam, incidunt. Quo quisquam quas sed facere eos adipisci, soluta omnis nihil deleniti velit nisi est nostrum distinctio possimus sequi, incidunt, ipsam culpa ratione repudiandae maxime? Molestiae repudiandae voluptate laborum.</p>
+                <button>order  now</button>
+            </div>
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-7</h2>
+                <h4>price: 1M</h4>
+                <p>Quasi, id libero? Illo voluptate quisquam saepe modi sed amet ullam consectetur earum quas? Suscipit dolore quidem fugiat modi facere aut consequuntur voluptas, atque ipsa necessitatibus ipsum doloremque impedit dignissimos.</p>
+                <button>order  now</button>
+            </div>
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-8</h2>
+                <h4>price: 1M</h4>
+                <p>Suscipit animi sint temporibus laudantium inventore eum illo ipsum harum maiores a iure corrupti ut dolores unde minus, asperiores cumque tempora assumenda dignissimos. In at, atque quaerat natus culpa magni.</p>
+                <button>order  now</button>
+            </div>
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-9</h2>
+                <h4>price: 1M</h4>
+                <p>Est molestias libero enim quidem neque. Debitis obcaecati, fugit nulla fugiat suscipit reprehenderit omnis, maxime ipsam architecto provident ex quod eaque enim dolor earum, doloremque dolorem rem vitae aut quibusdam!</p>
+                <button>order  now</button>
+            </div>
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-10</h2>
+                <h4>price: 1M</h4>
+                <p>Voluptate a libero repellat quis facere et cupiditate voluptas sint veritatis odio dolor atque aliquid praesentium iste alias commodi magni ad, soluta ratione sequi vero repellendus placeat deserunt! Porro, quae!</p>
+                <button>order  now</button>
+            </div>
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-11</h2>
+                <h4>price: 1M</h4>
+                <p>Eveniet rerum autem alias deleniti doloremque nemo magnam excepturi iusto esse. Praesentium debitis nisi blanditiis obcaecati dicta magni similique quia molestias tenetur ex, ullam est eveniet illum tempora deserunt exercitationem.</p>
+                <button>order  now</button>
+            </div>
+            <div class="bike">
+                <img src="enfield-5.jpg" alt="">
+                <h2>item-12</h2>
+                <h4>price: 1M</h4>
+                <p>Dolorum alias impedit aperiam voluptates perspiciatis eius neque quisquam exercitationem. Reprehenderit placeat praesentium rem, accusamus deserunt, odit distinctio dolores, eos est culpa id atque doloremque dolorum ducimus eum. In, quam.</p>
+                <button>order  now</button>
+            </div>
+         </div>
+    </section>
+
+</body>
+</html>

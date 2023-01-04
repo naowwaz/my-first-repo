@@ -1,0 +1,25 @@
+body{
+    margin: 0 auto;
+    width: 1000px;
+    background: #000;
+    color: white;
+}
+.header{
+   background: green;
+
+}
+.top{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.top img{
+    height: 420px;
+}
+.btn{
+    background: rgb(172, 5, 5);
+    border: 2px;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    font-size: medium;
+}
